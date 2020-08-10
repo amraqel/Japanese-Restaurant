@@ -1,0 +1,305 @@
+/* variables */
+:root{
+    --light-green:#afc67b;
+    --dark-green:#45493b;
+    --dark:#212121;
+    --gray:#c5c6c4;
+}
+
+/* reset */
+body,p,a,ul,li{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/* base styles */
+body {
+    background: var(--dark);
+    overflow-x: hidden; 
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: normal;
+}
+
+#learn-btn{
+    background: none;
+    color: var(--light-green);
+    padding:6px 12px;
+    display: inline-block;
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--light-green);
+    background-color:rgb(136,165,71,0.3);
+}
+#learn-btn:hover{
+    background-color:rgb(136,165,71,0.7);
+}
+#welcome-date{
+    font-family: montessert;
+    font-weight: bold;
+}
+
+/* for the form */
+/* #submit_btn{
+
+}
+input,textarea{
+
+} */
+/* fonts*/
+p{
+    color:white;
+}
+h1,h2{
+    color:var(--light-green);
+}
+h3,h4{
+    color:white;
+}
+
+h1{
+    font-size: 2em;
+}
+h2,h3{
+    font-size:1.5em
+}
+h4{
+    font-size: 1em;
+}
+/* img{
+    max-width: 100%;
+} */
+/* first page */
+.site-nav ul{
+    display: none;
+}
+.welcome-section{
+    background-repeat: no-repeat;
+    background-image: url(../images/welcome.jpg);
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+}
+.logo-img{
+    grid-column: 1/4;
+}
+.opening{
+    grid-column: 7/8;
+}
+.notes{
+    padding:20px;
+    text-align: center;
+    background-color: var(--dark-green);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.welcome-img{
+    grid-column: 7/9;
+}
+.welcome-img img{
+    width: 200%;
+}
+
+/* second page (menu page) */
+.header-menu{
+    padding:5em .5em ;
+    background-color:var(--dark) ;
+}
+.menu-header{
+    background-color: var(--dark-green);
+    padding: 25px;
+    text-align: center;
+}
+.grid{
+    background-color: var(--dark-green);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: max-content;
+}
+.grid h2{
+    text-align: center;
+    padding: 0.8em;
+}
+.grid div{
+    text-align: center;
+    
+}
+.menu-footer{
+    background-color: var(--dark-green);
+    text-align: center;
+    padding: 25px;
+}
+.menu-footer h1,p{
+    padding-bottom: 1em;
+}
+
+
+/* third page , Discover */
+
+#events{
+    background-image: url(../images/discover.jpg);
+}
+
+.discover-grid{
+    text-align: center;
+    margin: 50px;
+    padding: 10px 10px;
+    background-color: var(--dark-green);
+    grid-template-columns: 1fr;
+}
+.discover-grid h1{
+    color: white;
+    font-size: 2.5em;
+}
+
+.ellipse{
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius:50%;
+    display:inline-block;
+    padding:10px;
+    background-color: var(--gray);
+}
+
+
+
+
+ /* Large Screens and laptops */ 
+@media screen and (min-width:960px){
+    h2,h3{
+        font-size:2em
+    }
+    .header-menu{
+        background-color:var(--dark) ;
+        margin: 0em 12em;
+    }
+    .grid{
+        justify-content: center;
+        background-color: var(--dark-green);
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .notes{
+        grid-template-columns: repeat(1fr,3);
+    }
+
+}
+
+
+/* .welcome-section{
+    background-image: url(../images/welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    height:60rem;
+    padding-left: 50rem;
+    padding-top: 2rem
+
+}
+ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+.site_nav{
+    font-size: 2.2rem;
+}
+
+.site_nav a{
+    color: #afc67b;
+    text-decoration: none;
+    padding-left: 1.5rem;
+} 
+
+/* .logo-img>img{
+    padding-left:10rem ;
+    padding-top: 5rem;
+    width: 4.14cm;
+    height:3.56cm;
+} */
+/*.opening{
+    padding-top: 2rem;
+    color:#afc67b;
+    font-size: 3rem;
+}*/
+
+
+
+/* .first h1{
+    padding-top: 3rem;
+    color:#afc67b;
+    font-size: 3.5rem;
+}*/
+/*
+
+.actully-cook{
+    background-color: #212121;
+    background-image: url(../images/welcome_parts.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    width:100%;
+    height:489px;
+}
+.actully-cook h3 {
+    color: #5f6a46;
+    font-size: 2.5rem;
+    padding-left:10rem;
+    padding-top: 10rem;
+}
+.actully-cook p{
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 10rem;
+    padding-top: 2rem;
+}
+.third{
+    background-color:#494d3f ;
+    display: inline-flex;
+    width: 100%;
+    height: 20rem;
+}
+
+.note{
+    padding-top: 5rem;
+    padding-left: 10rem;
+}
+.note h3{
+    color: white;
+    font-size: 1.5rem;
+}
+.note p{
+    color: white;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+.menu-grid{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #45493b;
+}
+
+.grid-item>h1{
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #afc67b;
+}
+.grid-item>p{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+.grid-item>.price{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+} */
