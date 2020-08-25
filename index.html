@@ -1,429 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
     <title>Japanese Restaurant</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- welcome page -->
     <section id="welcome">
-        <!-- welcome image and it's contents -->
-        <div class="welcome">
+      <!-- welcome image and it's contents -->
+      <div class="welcome">
+        <div class="welcome__img">
+          <img src="images/welcome.jpg" alt="welcome-img" />
+          <!-- nav bar, logo, opening text and learn more button -->
+          <div class="welcome__contents">
+            <nav class="welcome__nav">
+              <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
 
-            <div class="welcome-img">
-                <img src="images/welcome.jpg" alt="welcome-img">
-                <!-- nav bar, logo, opening text and learn more button -->
-                <div class="img-contents">
-
-                    <nav class="site-nav">
-                        <ul>
-                            <li><a href="#welcome">Welcome</a></li>
-                            <li><a href="#menu">Menu</a></li>
-                            <li><a href="#events">Events</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="logo-img">
-                        <img src="images/logo.png" alt="resturant logo">
-                    </div>
-
-                    <div class="opening-text">
-                        <h1>NEW OPENING</h1>
-                        <h1 id="open-date">23RD SEPT</h1>
-                    </div>
-
-                    <div id="learn-more-btn">
-                        <h1><a href="#">LEARN MORE</a></h1>
-                    </div>
-
-                </div>
-
+            <div class="welcome__logo">
+              <img src="images/logo.png" alt="resturant logo" />
             </div>
 
+            <div class="welcome__text">
+              <h1 class="green-font">NEW OPENING</h1>
+              <h1 class="welcome__date green-font">23RD SEPT</h1>
+            </div>
 
-
+            <div class="welcome__btn">
+              <h1><a href="#">LEARN MORE</a></h1>
+            </div>
+          </div>
         </div>
-        <!-- actually cook question -->
-        <div class="actually-cook">
+      </div>
 
-            <div class="text-cook">
-                <h3>What do we actually cook?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolorem magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-            </div>
-            <!-- welcome image parts, not displayed on mobile -->
-            <div class="welcome-parts">
-                <img src="images/welcome_parts.png" alt="welcome img parts">
-            </div>
-
+      <!-- actually cook question -->
+      <div class="actually-cook">
+        <div class="actually-cook__text">
+          <h1 class="gd-font green-font">What do we actually cook?</h1>
+          <p class="grey-font">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+            eiusmod tempor incididunt ut labore et dolorem magna aliqua. Ut enim
+            ad minim veniam, quis nostrud
+          </p>
         </div>
-        <!-- welcome page notes including 3 notes -->
-        <div class="notes">
-            <!-- each note include brushes and text -->
-            <div class="note">
-
-                <img class="brush" src="images/brush.png">
-                <h4>New tastes</h4>
-                <p>Lorem ipsum dolor sit amet, consecte<br> sectetur adipisicing elit, tation omne<br> ullamco laboris nisi ut aliqolore.</p>
-
-            </div>
-            <div class="note">
-
-                <img class="brush" src="images/brush.png">
-                <img class="brush" src="images/brush.png">
-                <h4>New dishes cooking</h4>
-                <p>Lorem ipsum dolor sit amet, consecte<br> sectetur adipisicing elit, tation omne<br> ullamco laboris nisi ut aliqolore.</p>
-
-            </div>
-            <div class="note">
-
-                <img class="brush" src="images/brush.png">
-                <img class="brush" src="images/brush.png">
-                <img class="brush" src="images/brush.png">
-                <h4>New restaurant</h4>
-                <p>Lorem ipsum dolor sit amet, consecte<br> sectetur adipisicing elit, tation omne<br> ullamco laboris nisi ut aliqolore.</p>
-
-            </div>
+        <!-- welcome image parts, not displayed on mobile  -->
+        <div class="actually-cook__img">
+          <img src="images/welcome_parts.png" alt="welcome img parts" />
         </div>
+      </div>
+
+      <!-- welcome page notes including 3 notes -->
+      <div class="notes">
+        <!-- each note include brushes and text -->
+        <div class="notes__item">
+          <img class="brush" src="images/brush.png" />
+          <h2 class="gd-font grey-font">New tastes</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte<br />
+            sectetur adipisicing elit, tation omne<br />
+            ullamco laboris nisi ut aliqolore.
+          </p>
+        </div>
+        <div class="notes__item">
+          <img class="brush" src="images/brush.png" />
+          <img class="brush" src="images/brush.png" />
+          <h2 class="gd-font grey-font">New dishes cooking</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte<br />
+            sectetur adipisicing elit, tation omne<br />
+            ullamco laboris nisi ut aliqolore.
+          </p>
+        </div>
+        <div class="notes__item">
+          <img class="brush" src="images/brush.png" />
+          <img class="brush" src="images/brush.png" />
+          <img class="brush" src="images/brush.png" />
+          <h2 class="gd-font grey-font">New restaurant</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consecte<br />
+            sectetur adipisicing elit, tation omne<br />
+            ullamco laboris nisi ut aliqolore.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- menu page contains header, menu grid and footer -->
     <section id="menu">
-
-        <div class="menu-container">
-            <!-- title for the menu -->
-            <div class="menu-header">
-                <h3>We bring tradition</h3>
-                <h2>TO YOUR PLATE</h2>
-            </div>
-            <!-- include the menu dishes, 6 dishes -->
-            <div class="menu-grid grid">
-                <!-- each dish include image and description -->
-                <div class="grid-item">
-                    <img class="dish-img" src="images/california_sushi.jpg" alt="california_sushi_img">
-                </div>
-                <div class="grid-item">
-                    <h5 class="dish-name">California Sushi</h5>
-                    <p class="dish-description">Lorem ipsum dolor<br> sit amet, consectetur<br> adipisicing elit sed do</p>
-                    <h6 class="price">$14.95</h6>
-                </div>
-
-                <div class="grid-item">
-                    <img class="dish-img" src="images/traditional_wok.jpg" alt="traditional_wok_img">
-                </div>
-                <div class="grid-item">
-                    <h5 class="dish-name">Traditional Wok</h5>
-                    <p class="dish-description">Lorem ipsum dolor<br> sit amet, consectetur<br> adipisicing elit sed do</p>
-                    <h6 class="price">$14.95</h6>
-                </div>
-
-                <div class="grid-item-3">
-                    <h5 class="dish-name">Poké Bowl</h5>
-                    <p class="dish-description">Lorem ipsum dolor<br> sit amet, consectetur<br> adipisicing elit sed do</p>
-                    <h6 class="price">$14.95</h6>
-                </div>
-                <div class="grid-item">
-                    <img class="dish-img" src="images/poke_bowl.jpg" alt="poke_bowl_img">
-                </div>
-
-                <div class="grid-item">
-                    <h5 class="dish-name">Fresh Salmon</h5>
-                    <p class="dish-description">Lorem ipsum dolor<br> sit amet, consectetur<br> adipisicing elit sed do</p>
-                    <h6 class="price">$16.95</h6>
-                </div>
-                <div class="grid-item">
-                    <img class="dish-img" src="images/fresh_salmon.jpg" alt="fresh_salmon_img">
-                </div>
-
-                <div class="grid-item">
-                    <img class="dish-img" src="images/avocado_sushi.jpg" alt="avocado_sushi_img">
-                </div>
-                <div class="grid-item">
-                    <h5 class="dish-name">Avocado Sushi</h5>
-                    <p class="dish-description">Lorem ipsum dolor<br> sit amet, consectetur<br> adipisicing elit sed do</p>
-                    <h6 class="price">$14.95</h6>
-                </div>
-
-                <div class="grid-item">
-                    <img class="dish-img" src="images/king_sushi.jpg" alt="king_sushi_img">
-                </div>
-                <div class="grid-item">
-                    <h5 class="dish-name">King Sushi</h5>
-                    <p class="dish-description">Lorem ipsum dolor<br> sit amet, consectetur<br> adipisicing elit sed do</p>
-                    <h6 class="price">$14.95</h6>
-                </div>
-
-
-            </div>
-            <!-- footer for the menu page -->
-            <div class="menu-footer">
-
-                <h3>We like to keep things simple</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis</p>
-                <img class="brush" src="images/brush.png" alt="brush">
-                <img class="brush" src="images/brush.png" alt="brush">
-                <img class="brush" src="images/brush.png" alt="brush">
-
-            </div>
+      <!-- header and menu-grid  -->
+      <div class="menu">
+        <!-- title for the menu -->
+        <div class="menu__header">
+          <h1 class="gd-header green-font">We bring tradition</h1>
+          <h1 class="grey-font">TO YOUR PLATE</h1>
         </div>
 
+        <!-- include the menu dishes, 6 dishes -->
+        <div class="menu__grid">
+          <!-- each dish include image and description -->
+          <div class="menu__item">
+            <img src="images/california_sushi.jpg" alt="california_sushi_img" />
+          </div>
+          <div class="menu__item">
+            <h2 class="dish-name gd-font green-font">California Sushi</h2>
+            <p class="dish-description">
+              Lorem ipsum dolor<br />
+              sit amet, consectetur<br />
+              adipisicing elit sed do
+            </p>
+            <h3 class="gd-font grey-font">$14.95</h3>
+          </div>
+
+          <div class="menu__item">
+            <img src="images/traditional_wok.jpg" alt="traditional_wok_img" />
+          </div>
+          <div class="menu__item">
+            <h2 class="dish-name gd-font green-font">Traditional Wok</h2>
+            <p class="dish-description">
+              Lorem ipsum dolor<br />
+              sit amet, consectetur<br />
+              adipisicing elit sed do
+            </p>
+            <h3 class="gd-font grey-font">$14.95</h3>
+          </div>
+
+          <div class="menu__item">
+            <h2 class="dish-name gd-font green-font">Poké Bowl</h2>
+            <p class="dish-description">
+              Lorem ipsum dolor<br />
+              sit amet, consectetur<br />
+              adipisicing elit sed do
+            </p>
+            <h3 class="gd-font grey-font">$14.95</h3>
+          </div>
+          <div class="menu__item">
+            <img src="images/poke_bowl.jpg" alt="poke_bowl_img" />
+          </div>
+
+          <div class="menu__item">
+            <h2 class="dish-name gd-font green-font">Fresh Salmon</h2>
+            <p class="dish-description">
+              Lorem ipsum dolor<br />
+              sit amet, consectetur<br />
+              adipisicing elit sed do
+            </p>
+            <h3 class="gd-font grey-font">$16.95</h3>
+          </div>
+          <div class="menu__item">
+            <img src="images/fresh_salmon.jpg" alt="fresh_salmon_img" />
+          </div>
+
+          <div class="menu__item">
+            <img src="images/avocado_sushi.jpg" alt="avocado_sushi_img" />
+          </div>
+          <div class="menu__item">
+            <h2 class="dish-name gd-font green-font">Avocado Sushi</h2>
+            <p class="dish-description">
+              Lorem ipsum dolor<br />
+              sit amet, consectetur<br />
+              adipisicing elit sed do
+            </p>
+            <h3 class="gd-font grey-font">$14.95</h3>
+          </div>
+
+          <div class="menu__item">
+            <img src="images/king_sushi.jpg" alt="king_sushi_img" />
+          </div>
+          <div class="menu__item">
+            <h2 class="dish-name gd-font green-font">King Sushi</h2>
+            <p class="dish-description">
+              Lorem ipsum dolor<br />
+              sit amet, consectetur<br />
+              adipisicing elit sed do
+            </p>
+            <h3 class="gd-font grey-font">$14.95</h3>
+          </div>
+        </div>
+        <!-- footer for the menu page -->
+        <div class="menu-footer">
+          <h1 class="gd-font green-font">We like to keep things simple</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor<br />
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            quis
+          </p>
+          <img class="brush" src="images/brush.png" alt="brush" />
+          <img class="brush" src="images/brush.png" alt="brush" />
+          <img class="brush" src="images/brush.png" alt="brush" />
+        </div>
+      </div>
     </section>
     <!-- events include discover, booking, discover new menu -->
     <section id="events">
+      <section class="discover">
+        <div class="discover__container">
+          <!-- header for the menu -->
+          <div class="discover__text">
+            <h1 class="gd-header grey-font">Discover</h1>
+            <h1 class="grey-font">OUR NEW MENU</h1>
+          </div>
 
-        <section class="discover">
-
-            <div class="discover-container">
-            <!-- header for the menu -->
-                <div class="discover-text">
-                    <h4>Discover</h4>
-                    <h2>OUR NEW MENU</h2>
-                </div>
-                
-                <div class="discover-menu">
-
-                    <!-- each dish include image in ellipse and text -->
-                    <div class="discover-menu-item">
-                        <div class="ellipse">
-                            <img class="dish-logo" src="images/nigiri.png" alt="nigiri-logo">
-                        </div>
-                        <h6>Nigiri with our best fish</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis $14.95</p>
-                    </div>
-
-                    <div class="discover-menu-item">
-                        <div class="ellipse">
-                            <img class="dish-logo" src="images/ramen.png" alt="ramen-logo">
-                        </div>
-                        <h6>Ramen is part of our cuisine</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis $14.95</p>
-                    </div>
-
-                    <div class="discover-menu-item">
-                        <div class="ellipse">
-                            <img class="dish-logo" src="images/nigiri.png" alt="sushi-logo">
-                        </div>
-                        <h6>Nigiri with our best fish</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis $14.95</p>
-                    </div>
-
-                    <div class="discover-menu-item">
-                        <div class="ellipse">
-                            <img class="dish-logo" src="images/sashimi.png" alt="sashimi-logo">
-                        </div>
-                        <h6>Sashimi for fish lovers</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis $14.95</p>
-                    </div>
-
-                    <div class="discover-menu-item">
-                        <div class="ellipse">
-                            <img class="dish-logo" src="images/uramaki.png" alt="uramaki-logo">
-                        </div>
-                        <h6>Uramaki made with the best ingredients</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis $14.95</p>
-                    </div>
-
-                    <div class="discover-menu-item">
-                        <div class="ellipse">
-                            <img class="dish-logo" src="images/sushi-rice.png" alt="sushi-logo">
-                        </div>
-                        <div class="item-text">
-                            <h6>Sushi rice made the traditional way</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do oculis $14.95</p>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
+          <div class="discover__menu">
+            <!-- each dish include image in ellipse and text -->
+            <div class="discover__item">
+              <div class="ellipse">
+                <img src="images/nigiri.png" alt="nigiri-logo" />
+              </div>
+              <div>
+                <h3 class="gd-font grey-font">Nigiri with our best fish</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                  do oculis $14.95
+                </p>
+              </div>
             </div>
 
-        </section>
+            <div class="discover__item">
+              <div class="ellipse">
+                <img src="images/ramen.png" alt="ramen-logo" />
+              </div>
 
-        <!-- booking section -->
-        <section>
-            <!-- including form and image -->
-            <form class="book-form">
-
-                <div class="header">
-                    <h4 class="book-form-title">Book here</h4>
-                </div>
-
-                <div class="form-grid">
-                    <div class="item">
-                        <label for="num-people">How many people?</label><br>
-                        <select name="num-people" required>
-                            <option class="option" value="1">1 Person</option>
-                            <option class="option" value="2">2 People</option>
-                            <option class="option" value="3">3 People</option>
-                            <option class="option" value="4">4 People</option>
-                        </select><br>
-                    </div>
-
-                    <div class="item">
-                        <label for="book-date">When is your date?</label><br>
-                        <input type="date" name="book-date"><br>
-                    </div>
-
-
-                    <!-- booking is available between 9 am and 6 pm -->
-                    <div class="item">
-                        <label for="book-hour">Time</label><br>
-                        <input type="time" name="book-hour" min="09:00" max="18:00" required><br>
-                    </div>
-
-                    <div class="item">
-                        <label for="name">Name</label><br>
-                        <input type="text" name="name" required placeholder="Full Name"><br>
-                    </div>
-
-                    <div class="item">
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" required placeholder="Your email address"><br>
-                    </div>
-
-                    <div class="item">
-                        <label for="phone">Phone</label><br>
-                        <input type="tel" name="phone" pattern="[0]{1}[5]{1}([6]|[9])-[0-9]{3}-[0-9]{4}" required placeholder="Your phone"><br>
-                    </div>
-
-                    <div class="item-submit">
-                        <input class="submit" type="submit"><br>
-                    </div>
-                </div>
-
-            </form>
-            <!-- booking img -->
-            <div class="book-img">
-                <img class="book-img" src="images/book_new.jpg" sizes="100px 100px" alt="book-img">
+              <div>
+                <h3 class="gd-font grey-font">Ramen is part of our cuisine</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                  do oculis $14.95
+                </p>
+              </div>
             </div>
 
-        </section>
+            <div class="discover__item">
+              <div class="ellipse">
+                <img src="images/nigiri.png" alt="sushi-logo" />
+              </div>
 
-        <!-- discover new menu -->
-        <section class="discover-new-menu">
-            <!-- header for the menu -->
-            <div class="new-menu-heading">
-                <h3>Discover</h3>
-                <h2>OUR NEW MENU</h2>
-            </div>
-            <!-- contents of new menu -->
-            <div class="new-menu-contents">
-
-                <!-- each dish include image and text for it's info -->
-                <div class="new-dish">
-
-                    <div class="new-dish-img">
-                        <img src="images/discover_new_1.jpg" alt="new-dish-1">
-                    </div>
-
-                    <div class="new-dish-text">
-                        <h4>Food / 16th March, 2019</h4>
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                        <a class=".link" href="#">READ MORE</a>
-                    </div>
-
-                </div>
-
-                <div class="new-dish">
-
-                    <div class="new-dish-img">
-                        <img src="images/discover_new_2.jpg" alt="new-dish-2">
-                    </div>
-
-                    <div class="new-dish-text">
-                        <h4>Spices / 16th March, 2019</h4>
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                        <a class=".link" href="#">READ MORE</a>
-                    </div>
-
-                </div>
-
-                <div class="new-dish">
-
-                    <div class="new-dish-img">
-                        <img src="images/discover_new_3.jpg" alt="new-dish-2">
-                    </div>
-
-                    <div class="new-dish-text">
-                        <h4>Chicken Curry / 16th March, 2019</h4>
-                        <h3>Lorem ipsum dolor sit</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
-                        <a class=".link" href="#">READ MORE</a>
-                    </div>
-
-                </div>
-
+              <div>
+                <h3 class="gd-font grey-font">Nigiri with our best fish</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                  do oculis $14.95
+                </p>
+              </div>
             </div>
 
-        </section>
+            <div class="discover__item">
+              <div class="ellipse">
+                <img src="images/sashimi.png" alt="sashimi-logo" />
+              </div>
 
+              <div>
+                <h3 class="gd-font grey-font">Sashimi for fish lovers</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                  do oculis $14.95
+                </p>
+              </div>
+            </div>
+
+            <div class="discover__item">
+              <div class="ellipse">
+                <img src="images/uramaki.png" alt="uramaki-logo" />
+              </div>
+
+              <div>
+                <h3 class="gd-font grey-font">
+                  Uramaki made with the best ingredients
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                  do oculis $14.95
+                </p>
+              </div>
+            </div>
+
+            <div class="discover__item">
+              <div class="ellipse">
+                <img src="images/sushi-rice.png" alt="sushi-logo" />
+              </div>
+
+              <div>
+                <h3 class="gd-font grey-font">
+                  Sushi rice made the traditional way
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
+                  do oculis $14.95
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- booking section -->
+      <section>
+        <!-- including form and image -->
+        <form class="booking">
+          <div class="booking__header">
+            <h1 class="gd-header grey-font">Book here</h1>
+          </div>
+
+          <div class="booking__form">
+            <div class="booking__item">
+              <label for="num-people">How many people?</label><br />
+              <select name="num-people" required>
+                <option class="option" value="1">1 Person</option>
+                <option class="option" value="2">2 People</option>
+                <option class="option" value="3">3 People</option>
+                <option class="option" value="4">4 People</option> </select
+              ><br />
+            </div>
+
+            <div class="booking__item">
+              <label for="book-date">When is your date?</label><br />
+              <input type="date" name="book-date" /><br />
+            </div>
+
+            <!-- booking is available between 9 am and 6 pm -->
+            <div class="booking__item">
+              <label for="book-hour">Time</label><br />
+              <input
+                type="time"
+                name="book-hour"
+                min="09:00"
+                max="18:00"
+                required
+              /><br />
+            </div>
+
+            <div class="booking__item">
+              <label for="name">Name</label><br />
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Full Name"
+              /><br />
+            </div>
+
+            <div class="booking__item">
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Your email address"
+              /><br />
+            </div>
+
+            <div class="booking__item">
+              <label for="phone">Phone</label><br />
+              <input
+                type="tel"
+                name="phone"
+                pattern="[0]{1}[5]{1}([6]|[9])-[0-9]{3}-[0-9]{4}"
+                required
+                placeholder="Your phone"
+              /><br />
+            </div>
+
+            <div class="booking__submit">
+              <input class="submit" type="submit" /><br />
+            </div>
+          </div>
+        </form>
+        <!-- booking img -->
+        <div class="booking__img">
+          <img class="book-img" src="images/book_new.jpg" alt="book-img" />
+        </div>
+      </section>
+
+      <!-- discover new menu -->
+      <section class="new-menu">
+        <!-- header for the menu -->
+        <div class="new-menu__header">
+          <h1 class="gd-header grey-font">Discover</h1>
+          <h1 class="grey-font">OUR NEW MENU</h1>
+        </div>
+
+        <!-- contents of new menu -->
+        <div class="new-menu__contents">
+          <!-- each dish include image and text for it's info -->
+          <div class="new-menu__dish">
+            <div>
+              <img src="images/discover_new_1.jpg" alt="new-dish-1" />
+            </div>
+
+            <div class="new-menu__text">
+              <h4 class="bold">Food / 16th March, 2019</h4>
+              <h4 class="bold">Lorem ipsum dolor sit</h4>
+              <p class="dark-font">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              </p>
+              <a class=".link" href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="new-menu__dish">
+            <div>
+              <img src="images/discover_new_2.jpg" alt="new-dish-2" />
+            </div>
+
+            <div class="new-menu__text">
+              <h4 class="bold">Spices / 16th March, 2019</h4>
+              <h4 class="bold">Lorem ipsum dolor sit</h4>
+              <p class="dark-font">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              </p>
+              <a class=".link" href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="new-menu__dish">
+            <div>
+              <img src="images/discover_new_3.jpg" alt="new-dish-2" />
+            </div>
+
+            <div class="new-menu__text">
+              <h4 class="bold">Chicken Curry / 16th March, 2019</h4>
+              <h4 class="bold">Lorem ipsum dolor sit</h4>
+              <p class="dark-font">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              </p>
+              <a class=".link" href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
     <!-- Last section of the main sections include contact info -->
     <section id="contact">
-        <!-- some words for the developer and social media links -->
-        <div class="developer-info">
-
-            <div class="some-words">
-                <h3>“</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
-                <h3>Linda Steward</h3>
-            </div>
-
-            <div class="logos-links">
-                <a href="#"><img class="social-logo" src="images/facebook-logo.png" alt="social-logo"></a>
-                <a href="#"><img class="social-logo" src="images/tweeter-logo.png" alt="social-logo"></a>
-                <a href="#"><img class="social-logo" src="images/insta-logo.png" alt="social-logo"></a>
-                <a href="#"><img class="social-logo" src="images/pin-logo.png" alt="social-logo"></a>
-                <a href="#"><img class="social-logo" src="images/google-logo.png" alt="social-logo"></a>
-            </div>
-
-        </div>
-        <!-- this is the Footer for the website which includes About info in grid -->
-        <div class="about grid">
-
-            <div class="item-1">
-                <h1>ABOUT</h1>
-                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiumod tempor incididunt ultimam </p>
-            </div>
-
-            <div class="item-2">
-                <h1>ABOUT</h1>
-                <h2>Team</h2>
-                <h2>Join us</h2>
-                <h2>Ethic</h2>
-                <h2>Goals</h2>
-            </div>
-
-            <div class="item-3">
-                <h1>ABOUT</h1>
-                <h2>Team</h2>
-                <h2>Join us</h2>
-                <h2>Ethic</h2>
-                <h2>Goals</h2>
-            </div>
-
-            <div class="item-4">
-                <h1>ABOUT</h1>
-                <h2>Team</h2>
-                <h2>Join us</h2>
-                <h2>Ethic</h2>
-                <h2>Goals</h2>
-            </div>
-
+      <!-- some words for the developer and social media links -->
+      <div class="info">
+        <div class="info__words">
+          <h1 class="gd-header green-font">“</h1>
+          <p class="green-font">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor<br />
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis
+          </p>
+          <h3 class="gd-header green-font">Linda Steward</h3>
         </div>
 
+        <div class="info__links">
+          <a href="#"
+            ><img
+              class="social-logo"
+              src="images/facebook-logo.png"
+              alt="social-logo"
+          /></a>
+          <a href="#"
+            ><img
+              class="social-logo"
+              src="images/tweeter-logo.png"
+              alt="social-logo"
+          /></a>
+          <a href="#"
+            ><img
+              class="social-logo"
+              src="images/insta-logo.png"
+              alt="social-logo"
+          /></a>
+          <a href="#"
+            ><img
+              class="social-logo"
+              src="images/pin-logo.png"
+              alt="social-logo"
+          /></a>
+          <a href="#"
+            ><img
+              class="social-logo"
+              src="images/google-logo.png"
+              alt="social-logo"
+          /></a>
+        </div>
+      </div>
+
+      <!-- this is the Footer for the website which includes About info in grid -->
+      <div class="about grey-font">
+        <div class="about__item-1">
+          <h1>ABOUT</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do
+            eiumod tempor incididunt ultimam
+          </p>
+        </div>
+
+        <div class="about__item-2">
+          <h3 class="bold">ABOUT</h3>
+          <h3>Team</h3>
+          <h3>Join us</h3>
+          <h3>Ethic</h3>
+          <h3>Goals</h3>
+        </div>
+
+        <div class="about__item-3">
+          <h3 class="bold">ABOUT</h3>
+          <h3>Team</h3>
+          <h3>Join us</h3>
+          <h3>Ethic</h3>
+          <h3>Goals</h3>
+        </div>
+
+        <div class="about__item-4">
+          <h3 class="bold">ABOUT</h3>
+          <h3>Team</h3>
+          <h3>Join us</h3>
+          <h3>Ethic</h3>
+          <h3>Goals</h3>
+        </div>
+      </div>
     </section>
-
-</body>
-
+  </body>
 </html>
